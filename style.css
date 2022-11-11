@@ -1,0 +1,24 @@
+body{
+    background-size: cover;
+    background-position: center;
+}
+.header
+{
+font-size: 30px;
+width: 100%;
+margin: 0px;
+color: black;
+}
+
+
+
+.button{
+    width: 600px;
+    height: 40;
+    border-radius: 50px;
+    font-size: 20px;
+    background-color: aliceblue;
+    box-shadow: 10px 10px 10px gray;
+    font-weight: bold;
+    color: black;
+}
