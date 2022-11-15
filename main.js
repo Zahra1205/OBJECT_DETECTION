@@ -1,15 +1,15 @@
 function Bed_room(){
-    window.location.href = "https://zahra1205.github.io/bedroom/";
+    window.location.href = "bedroom.html";
 }
 function tv(){
-    window.location.href = "https://zahra1205.github.io/TV_AC/";
+    window.location.href = "tv.html";
 }
 function desk(){
-    window.location.href = "https://zahra1205.github.io/desk/";
+    window.location.href = "desk.html";
 }
 function bottle(){
-    window.location.href = "https://zahra1205.github.io/bottle/";
+    window.location.href = "bottle.html";
 }
 function fruit(){
-    window.location.href = "https://zahra1205.github.io/fruit_basket/";
+    window.location.href = "fruit_basket.html";
 }

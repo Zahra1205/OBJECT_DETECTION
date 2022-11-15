@@ -1,5 +1,5 @@
 body{
-    background-size: cover;
+    background-size:cover;
     background-position: center;
 }
 .header
@@ -10,9 +10,20 @@ margin: 0px;
 color: black;
 }
 #back{
-    float: left;
+    float: right;
+    height: 50px;
+    width: 90px;
+    font-size: large;
 }
 .header{
-    border-radius: 50px;
     font-size: 25px;
+
 }
+#bedroom{
+    width: 400px;
+    height: 45px;
+}
+ canvas{
+        box-shadow: 10px 10px 10px darkgray;
+        border-radius: 10px;
+    }

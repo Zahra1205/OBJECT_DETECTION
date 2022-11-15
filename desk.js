@@ -1,13 +1,14 @@
+var object=[];
 var img="";
 var status="";
 function preload(){
-    img = loadImage("desk.jpg");
+    img = loadImage("desk.webp");
     }
     function setup(){
     canvas = createCanvas(640, 420);
     canvas.center();
     objectDetector= ml5.objectDetector("cocossd", modelLoaded);
-document.getElementById("status").innerHTML="Status : Detecting Objects";
+document.getElementById("desk").innerHTML="Status : Detecting Objects";
 }
 function modelLoaded(){
 console.log("cocossd Model Loaded");
@@ -20,11 +21,25 @@ if(error){
 }
 else{
     console.log(results);
+    object= results;
 }
     }
  function draw(){
     image(img, 0, 0, 640, 420);
+    if(status!=""){
+        for(var i = 0 ; i < object.length; i++){
+            document.getElementById("status").innerHTML="Status : Object Detected";
+    
+            fill("#FF0000");
+            textSize(20);
+            var percent= floor(object[i].confidence*100);
+            text(object[i].label+" "+percent+"%", object[i].x+10, object[i].y+15);
+            noFill();
+            stroke("#FF0000");
+            rect(object[i].x, object[i].y, object[i].width, object[i].height);
+        }
+    }
     }
 function back(){
-        window.location.href = "https://zahra1205.github.io/OBJECT_DETECTION/";
+        window.location.href = "index.html";
     }
