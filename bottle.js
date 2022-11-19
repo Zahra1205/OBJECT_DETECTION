@@ -28,7 +28,7 @@ else{
     image(img, 0, 0, 640, 420);
     if(status!=""){
         for(var i = 0 ; i < object.length; i++){
-            document.getElementById("status").innerHTML="Status : Object Detected";
+            document.getElementById("bottle").innerHTML="Status : Object Detected";
     
             fill("#FF0000");
             textSize(20);
